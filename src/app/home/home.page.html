@@ -1,20 +1,92 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-grid>
+<ion-row>
+  <ion-col>
+    <div>
+<ion-button (click)="math(7)">7</ion-button>
+</div>
+</ion-col>
+<ion-col>
+  <div>
+<ion-button (click)="math(8)">8</ion-button>
+</div>
+</ion-col>
+<ion-col>
+  <div>
+<ion-button (click)="math(9)">9</ion-button>
+</div>
+</ion-col>
+<ion-col>
+  <div>
+  <ion-button (click)="operators('*')">*</ion-button>
   </div>
-</ion-content>
+</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+    <div>
+<ion-button (click)="math(4)">4</ion-button>
+</div>
+</ion-col>
+<ion-col>
+  <div>
+<ion-button (click)="math(5)">5</ion-button>
+</div>
+</ion-col> 
+<ion-col>
+  <div>
+<ion-button (click)="math(6)">6</ion-button>
+</div>
+</ion-col>
+<ion-col>
+  <div>
+    <ion-button (click)="operators('/')">/</ion-button>
+  </div>
+</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+    <div>
+<ion-button (click)="math(1)">1</ion-button>
+</div>
+</ion-col>
+<ion-col>
+  <div>
+<ion-button (click)="math(2)">2</ion-button>
+</div>
+</ion-col>
+ <ion-col>
+  <div>
+<ion-button (click)="math(3)">3</ion-button>
+</div>
+</ion-col>
+<ion-col>
+  <div>
+    <ion-button (click)="operators('+')">+</ion-button>
+  </div>
+</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+    <div>
+<ion-button (click)="math(0)">0</ion-button>
+</div>
+</ion-col>
+<ion-col>
+  <div>
+<ion-button (click)="operators('=')">=</ion-button>
+</div>
+</ion-col>
+<ion-col>
+  <div>
+<ion-button (click)="operators('sqrt')">√</ion-button>
+</div>
+</ion-col>
+<ion-col>
+  <div>
+  <ion-button (click)="operators('-')">-</ion-button>
+  </div>
+</ion-col>
+</ion-row>
+</ion-grid>
+<ion-input value = "{{result}}"></ion-input>
+<ion-input value = "{{outputString}}"></ion-input>
